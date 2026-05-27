@@ -1,0 +1,584 @@
+:root {
+    --lime: #d2fd2a;
+    --grey: #4b505a;
+    --black: #171717;
+    --white: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--black);
+    color: var(--white);
+    font-family: 'Exo', sans-serif;
+}
+
+/* HEADER */
+header {
+    background: var(--grey);
+    padding-top: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Days One', sans-serif;
+    color: var(--lime);
+    margin: 0;
+    font-size: 3rem;
+}
+
+header .location {
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+.just-football{
+    width: 100%;
+    display: block;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    margin-top: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-item {
+    position: relative;
+    font-size: 1.2rem;
+    color: var(--lime);
+    cursor: pointer;
+    padding: 10px;
+    font-family: 'Days One', sans-serif;
+}
+
+/* DROPDOWN MENU */
+.dropdown {
+    display: none;
+    position: absolute;
+    background: #1f1f1f;
+    border: 2px solid var(--lime);
+    border-radius: 6px;
+    top: 40px;
+    left: 0;
+    min-width: 160px;
+    z-index: 10;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: var(--white);
+    text-decoration: none;
+    font-family: 'Exo', sans-serif;
+}
+
+.dropdown a:hover {
+    background: var(--lime);
+    color: var(--black);
+}
+
+/* MAIN CONTENT */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #1f1f1f;
+    border-radius: 10px;
+}
+
+.marketing {
+    font-family: 'Rasa', serif;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    color: #e6e6e6;
+}
+
+.disclaimer {
+    margin-top: 30px;
+    padding: 15px;
+    background: #2c2c2c;
+    border-left: 6px solid var(--lime);
+    font-size: 1.15rem;
+    font-weight: 600;
+}
+
+
+/* TRANDING BTN */
+.trending-searches {
+    background-color: #171717;
+    padding: 50px 40px;
+}
+
+.trending-searches h2 {
+    color: #d2fd2a;
+    font-family: 'Exo', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.search-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.search-tag {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: #4b505a;
+    padding: 14px 24px;
+    border-radius: 999px;
+    font-family: 'Exo', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.search-tag:hover {
+    background-color: #d2fd2a;
+    color: #171717;
+    transform: translateY(-3px);
+    border: 2px solid #d2fd2a;
+}
+
+
+/* SPRING SALE */
+.sale-section {
+    background: linear-gradient(to bottom, #4b505a, #3f8fc4);
+    padding: 0 0 40px 0;
+}
+
+.sale-banner {
+    width: 100%;
+    min-height: 500px;
+    background: url("../images/sale-bg.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sale-overlay {
+    text-align: center;
+    color: #d2fd2a;
+    padding: 40px 20px;
+}
+
+.sale-overlay h2 {
+    font-family: 'Exo', sans-serif;
+    font-size: 120px;
+    line-height: 1;
+    margin: 0;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.sale-overlay h2 span {
+    font-weight: 300;
+    margin-right: 10px;
+}
+
+.sale-overlay p {
+    font-family: 'Exo', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+.sale-cards {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 16px;
+    padding: 20px 16px 0;
+}
+
+.sale-card {
+    background: #ffffff;
+    text-decoration: none;
+    color: #171717;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.sale-card:hover {
+    transform: translateY(-5px);
+}
+
+.sale-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.sale-card p {
+    font-family: 'Exo', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    padding: 18px 10px;
+}
+
+
+/* NEWS */
+.trending-boots {
+    background: #171717;
+    padding: 50px 24px;
+  }
+  
+  .trending-boots h2 {
+    color: #d2fd2a;
+    font-family: 'Exo', sans-serif;
+    font-size: 42px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 30px;
+  }
+  
+  .trending-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+  }
+  
+  .trend-card {
+    text-decoration: none;
+    background: #1f1f1f;
+    border: 1px solid #4b505a;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .trend-card:hover {
+    transform: translateY(-6px);
+    border-color: #d2fd2a;
+  }
+  
+  .trend-card img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .trend-info {
+    padding: 18px;
+    background: #171717;
+  }
+  
+  .trend-info h3 {
+    margin: 0 0 8px;
+    color: white;
+    font-family: 'Exo', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .trend-info p {
+    margin: 0;
+    color: #bfc4cc;
+    font-family: 'Exo', sans-serif;
+    font-size: 16px;
+  }
+  
+  
+
+/* SOCIAL ICONS */
+.socials {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.socials h2 {
+    font-family: 'Days One', sans-serif;
+    color: var(--lime);
+    margin-bottom: 15px;
+}
+
+.social-icon {
+    margin: 0 20px;
+    font-size: 3rem;
+    color: var(--lime);
+    transition: 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--white);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    color: #bfbfbf;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+.bofoo-logo {
+    font-family: 'Press Start 2P', sans-serif; /* Pixel-style font */
+    font-size: 1.3rem;
+    color: #171717;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow:
+        0 0 5px #171717,
+        0 0 10px #171717,
+        0 0 20px #171717,
+        0 0 40px #171717;
+    transition: 0.3s ease;
+  }
+  
+  .bofoo-logo:hover {
+    color: #d2fd2a;
+    text-shadow:
+        0 0 10px #d2fd2a,
+        0 0 20px #d2fd2a,
+        0 0 40px #d2fd2a,
+        0 0 60px #d2fd2a;
+  }
+
+
+
+/* =========================
+   MOBILE VERSION
+   ========================= */
+   @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    /* HEADER */
+    header {
+        padding: 20px 15px 0;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    header .location {
+        font-size: 0.95rem;
+        margin-top: 8px;
+    }
+
+    .just-football {
+        width: 100%;
+        height: auto;
+    }
+
+    /* NAVBAR */
+    .navbar {
+        margin-top: 18px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+        padding: 0 10px 20px;
+    }
+
+    .nav-item {
+        width: 100%;
+        max-width: 260px;
+        text-align: center;
+        font-size: 1rem;
+        padding: 12px 10px;
+        background: #1f1f1f;
+        border: 1px solid var(--lime);
+        border-radius: 8px;
+    }
+
+    .dropdown {
+        position: static;
+        display: block;
+        margin-top: 10px;
+        border: none;
+        background: transparent;
+        min-width: unset;
+    }
+
+    .dropdown a {
+        padding: 8px 0;
+        font-size: 0.95rem;
+        color: white;
+        border-top: 1px solid #333;
+    }
+
+    .dropdown a:hover {
+        background: transparent;
+        color: var(--lime);
+    }
+
+    .bofoo-logo {
+        font-size: 0.9rem;
+        max-width: 260px;
+        width: 100%;
+        padding: 12px 10px;
+        background: #1f1f1f;
+        border: 1px solid var(--lime);
+        border-radius: 8px;
+    }
+
+    /* MAIN CONTAINER */
+    .container {
+        margin: 25px 15px;
+        padding: 18px;
+    }
+
+    .marketing {
+        font-size: 1rem;
+        line-height: 1.6rem;
+    }
+
+    .disclaimer {
+        font-size: 0.95rem;
+        padding: 12px;
+    }
+
+    /* SOCIALS */
+    .socials {
+        margin-top: 30px;
+    }
+
+    .socials h2 {
+        font-size: 1.3rem;
+    }
+
+    .social-icon {
+        margin: 0 10px;
+        font-size: 2rem;
+    }
+
+    /* TRENDING SEARCHES */
+    .trending-searches {
+        padding: 35px 15px;
+    }
+
+    .trending-searches h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .search-tags {
+        gap: 12px;
+        justify-content: center;
+    }
+
+    .search-tag {
+        font-size: 0.9rem;
+        padding: 10px 16px;
+        text-align: center;
+    }
+
+    /* SPRING SALE */
+    .sale-section {
+        padding-bottom: 25px;
+    }
+
+    .sale-banner {
+        min-height: 260px;
+        padding: 20px 10px;
+    }
+
+    .sale-overlay {
+        padding: 20px 10px;
+    }
+
+    .sale-overlay h2 {
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+
+    .sale-overlay h2 span {
+        display: block;
+        margin-right: 0;
+    }
+
+    .sale-overlay p {
+        font-size: 1rem;
+        margin-top: 12px;
+    }
+
+    .sale-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        padding: 15px;
+    }
+
+    .sale-card img {
+        height: 130px;
+    }
+
+    .sale-card p {
+        font-size: 1rem;
+        padding: 12px 8px;
+    }
+
+    /* NEWS */
+    .trending-boots {
+        padding: 35px 15px;
+    }
+
+    .trending-boots h2 {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .trending-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .trend-card img {
+        height: 220px;
+    }
+
+    .trend-info {
+        padding: 14px;
+    }
+
+    .trend-info h3 {
+        font-size: 1.1rem;
+    }
+
+    .trend-info p {
+        font-size: 0.95rem;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-top: 30px;
+        padding: 20px 15px;
+        font-size: 0.85rem;
+    }
+}
